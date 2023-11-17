@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <h1 class="text-6xl text-[#1e293b] text-center mt-4 font-bold">
+      Sign Up Page
+    </h1>
+    <div class="main flex justify-center">
+      <form
+        class="bg-white shadow-md rounded px-3 pt-1 pb-3 mb-4 w-3/5 m-[15vh]"
+      >
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="">
+            Name
+          </label>
+          <input
+            required
+            class="shadow email appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name"
+            type="text"
+            placeholder="Username"
+          />
+          <div class="mb-4 mt-1">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="username"
+            >
+              Email
+            </label>
+            <input
+              autofocus
+              class="shadow email appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="username"
+              type="email"
+              placeholder="Username"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="shadow pass appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+              id="password"
+              type="password"
+              placeholder="Choose a password"
+            />
+            <div class="flex justify-between">
+              <label for="fileInp" class="cursor-pointer">
+                <i class="fa-regular fa-image text-3xl cursor-pointer"></i> Add
+                a Picture of Yourself
+              </label>
+              <input type="file" id="fileInp" class="hidden .fileInp" />
+              <a class="text-blue-300 mt-2" href="./login.html"
+                >Already Have an Account?</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <button
+              class="bg-blue-500 w-2/3 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Create
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script type="module" src="signup.js"></script>
+  </body>
+</html>

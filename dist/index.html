@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socialize</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="w-screen">
+    <div class="container w-screen">
+      <nav
+        class="nav w-screen flex justify-between m-1 mt-0 bg-slate-100 p-1 md:flex"
+      >
+        <div
+          class="pfp-holder border-2 border-gray-300 w-[50px] h-[50px] circle rounded-[50%]"
+        >
+          <i class="text-2xl icon p-3 fa-regular fa-user"></i>
+        </div>
+        <div class="flex">
+          <div class="mt-4 mr-4">
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer checkbox" />
+              <div
+                class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+              ></div>
+            </label>
+          </div>
+
+          <div class="mt-2 mr-2">
+            <button
+              id="dropdownDelayButton"
+              data-dropdown-toggle="dropdownDelay"
+              data-dropdown-delay="500"
+              data-dropdown-trigger="hover"
+              class="text-white btn bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button"
+            >
+              Settings
+              <svg
+                class="w-2.5 h-2.5 ms-3"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <div
+              id="dropdownDelay"
+              class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDelayButton"
+              >
+                <li>
+                  <a
+                    href="./login.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Sign In</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./signup.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Sing Up</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="block px-4 logout py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >Sign out
+
+                    <i class="ml-6 fa-solid fa-right-from-bracket"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="flex border-b-2 mt-0 post-container border-neutral-200 w-screen"
+      >
+        <div class="w-screen flex">
+          <input
+            class="border-2 w-3/6 rounded-3xl py-2 pl-10 pr-2 my-2"
+            type="text"
+            placeholder="What's on your mind?"
+          />
+          <form class="ml-3 mt-4 flex">
+            <label for="fileInp">
+              <i class="fa-regular fa-image text-3xl cursor-pointer"></i>
+            </label>
+            <input type="file" id="fileInp" class="hidden" />
+            <div class="post-btn">
+              <button
+                type="submit"
+                class="ml-4 border text-white bg-blue-500 py-1 px-3 rounded-full"
+              >
+                Post
+              </button>
+            </div>
+          </form>
+          <a
+            target="_blank"
+            class="text-end w-3/5 mt-4 text-blue-500 hover:text-orange-500 mr-5"
+            href="https://ibaddkhan.github.io/Image-Editor/"
+            >Edit images</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

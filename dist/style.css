@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body.dark-mode {
+  color: #141414;
+  background-color: #272727;
+  color: #dadada;
+}
+
+.nav.dark-mode {
+  background-color: #a09d9d;
+  color: #141414;
+}
+.icon.dark-mode {
+  border-color: rgb(43, 43, 43);
+}
+.post-container.dark-mode {
+  border-color: rgb(139, 139, 139);
+  color: #ffffff;
+  background-color: #383838;
+}
